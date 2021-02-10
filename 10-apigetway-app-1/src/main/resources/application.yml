@@ -1,0 +1,17 @@
+server:
+  port: 4444
+spring:
+  application:
+    name: STOCK-API-GATEWAY
+zuul:
+  prefix: /api
+  routes:
+    price:
+      path: /price/**
+      serviceId: STOCK-PRICE-SERVICE
+    calc:
+      path: /calc/**
+      serviceId: STOCKCALC-NAME-QUENTITY-SERVICE
+      
+#better to create springboot project with compatable version for all dependencies(Ex:- spring 4.xx version not showing zuul so go for spring 3.xx version)
+#otherwise api getway not work even if we get the dependencies from maven repositories
