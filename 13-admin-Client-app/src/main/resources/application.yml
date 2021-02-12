@@ -1,0 +1,9 @@
+server:
+  port: 9091
+
+spring:  application:    name: spring-boot-admin-client1
+
+#configure the admin server  boot:    admin:      client:        url: http://localhost:9090/
+
+#configure the actuators
+management:  endpoints:    web:      exposure:        include: "*"
