@@ -1,0 +1,12 @@
+server:  port: 2222
+
+spring:  application:    name: client-config  profiles:
+    active: prod
+ 
+  cloud:    config:      uri: http://localhost:9999
+#Active Profile - will relate to development properties file in the server. 
+#If this property is absent then,default profile will be activated which is 
+#the property file without any environment name at the end. 
+ 
+# N.B. this is the default:
+ #management.security.enabled=false
