@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+
+spring:  application:    name: demo-app
+    
+#demo:
+  #welcomeMsg: hello,how are you?
+  #greetMsg: Good Morning..||
+
+#if the properties in the form of key or value or properties are more then read like this
+demo:
+  properties:
+    welcomeMsg : welcome vikas
+    greetMsg :   good mourning vikas yadav ji
+    prabhaMsg : hiii vikas where are you
